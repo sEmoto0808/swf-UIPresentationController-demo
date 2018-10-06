@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O9I-9G-CWw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FadeViewController-->
+        <scene sceneID="WcF-14-EfA">
+            <objects>
+                <viewController storyboardIdentifier="FadeViewController" title="FadeViewController" modalPresentationStyle="overCurrentContext" id="O9I-9G-CWw" customClass="VerticalViewController" customModule="swf_Transition_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Po7-ZX-cWV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPw-KT-UlR">
+                                <rect key="frame" x="164.5" y="90" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapDismiss:" destination="O9I-9G-CWw" eventType="touchUpInside" id="HP5-8T-RCN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6R-af-Zky">
+                                <rect key="frame" x="172" y="170" width="31" height="30"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="didTapNext:" destination="O9I-9G-CWw" eventType="touchUpInside" id="SQX-Ap-tKK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VPw-KT-UlR" firstAttribute="centerX" secondItem="Po7-ZX-cWV" secondAttribute="centerX" id="8Up-c2-RLb"/>
+                            <constraint firstItem="VPw-KT-UlR" firstAttribute="top" secondItem="Fdk-uX-ZKl" secondAttribute="top" constant="70" id="ICT-5G-ljw"/>
+                            <constraint firstItem="j6R-af-Zky" firstAttribute="top" secondItem="VPw-KT-UlR" secondAttribute="bottom" constant="50" id="SXg-vd-8B0"/>
+                            <constraint firstItem="j6R-af-Zky" firstAttribute="centerX" secondItem="Po7-ZX-cWV" secondAttribute="centerX" id="TR5-Yp-yX4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fdk-uX-ZKl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eys-bC-DEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155.07246376811597" y="158.70535714285714"/>
+        </scene>
+    </scenes>
+</document>
