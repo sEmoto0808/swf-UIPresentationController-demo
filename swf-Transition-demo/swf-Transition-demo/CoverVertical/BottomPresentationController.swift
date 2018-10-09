@@ -68,7 +68,7 @@ class BottomPresentationController: UIPresentationController {
                                     withParentContainerSize: containerBounds.size)
         presentedViewFrame.size = childContentSize
         presentedViewFrame.origin.x = margin.x / 2.0
-        presentedViewFrame.origin.y = containerBounds.size.height - childContentSize.height
+        presentedViewFrame.origin.y = containerBounds.size.height - childContentSize.height + 10
         
         return presentedViewFrame
     }

@@ -51,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A210B32F216CEA5300D86FC9 /* PanGesture */ = {
+			isa = PBXGroup;
+			children = (
+				A2CC410021690C7D00C0DE8E /* NextViewController.swift */,
+				A2CC410221690C8A00C0DE8E /* NextViewController.storyboard */,
+				A2CC41062169279E00C0DE8E /* CenterPresentationController.swift */,
+			);
+			path = PanGesture;
+			sourceTree = "<group>";
+		};
 		A2B7A39B2167D49B0030C2E0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,12 +95,10 @@
 		A2B7A3BD2167DF2A0030C2E0 /* CoverVertical */ = {
 			isa = PBXGroup;
 			children = (
+				A210B32F216CEA5300D86FC9 /* PanGesture */,
 				A2B7A3B92167D4CB0030C2E0 /* VerticalViewController.swift */,
 				A2B7A3BB2167D4FD0030C2E0 /* VerticalViewController.storyboard */,
-				A2CC410021690C7D00C0DE8E /* NextViewController.swift */,
-				A2CC410221690C8A00C0DE8E /* NextViewController.storyboard */,
 				A2CC410421691CD200C0DE8E /* BottomPresentationController.swift */,
-				A2CC41062169279E00C0DE8E /* CenterPresentationController.swift */,
 			);
 			path = CoverVertical;
 			sourceTree = "<group>";
